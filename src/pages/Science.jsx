@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import ResearchAssistant from '../components/ResearchAssistant';
+import { assetPath } from '../utils/assetPath';
 
 /* ── Reveal Hook ── */
 const useReveal = () => {
@@ -161,7 +162,7 @@ const Science = () => {
                                 </div>
                                 <div className="science-image-wrap animate-float">
                                     <img
-                                        src="/assets/characters/ELIAS.jpg"
+                                        src={assetPath('/assets/characters/ELIAS.jpg')}
                                         alt="Elias - The Time Keeper"
                                         className="science-image"
                                     />

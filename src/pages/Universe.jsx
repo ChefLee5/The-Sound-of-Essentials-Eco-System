@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import ParallaxHero from '../components/ParallaxHero';
+import { assetPath } from '../utils/assetPath';
 
 /* ── Reveal Hook ── */
 const useReveal = () => {
@@ -45,7 +46,7 @@ const Universe = () => {
       duo: ['Kenji', 'Aiko'],
       focus: t('universe.lands.Harmonia.focus'),
       desc: t('universe.lands.Harmonia.desc'),
-      duoImage: '/assets/duos/1_Kenji Aiko.jpg',
+      duoImage: assetPath('/assets/duos/1_Kenji Aiko.jpg'),
     },
     {
       land: 'Numeria',
@@ -54,7 +55,7 @@ const Universe = () => {
       duo: ['Kwame', 'Octavia'],
       focus: t('universe.lands.Numeria.focus'),
       desc: t('universe.lands.Numeria.desc'),
-      duoImage: '/assets/duos/5_Kwame Octavia.jpg',
+      duoImage: assetPath('/assets/duos/5_Kwame Octavia.jpg'),
     },
     {
       land: 'Vitalis',
@@ -63,7 +64,7 @@ const Universe = () => {
       duo: ['Felix', 'Amara'],
       focus: t('universe.lands.Vitalis.focus'),
       desc: t('universe.lands.Vitalis.desc'),
-      duoImage: '/assets/duos/3_Felix Amara.jpg',
+      duoImage: assetPath('/assets/duos/3_Felix Amara.jpg'),
     },
     {
       land: 'Chronia',
@@ -72,7 +73,7 @@ const Universe = () => {
       duo: ['Elias', 'Selene'],
       focus: t('universe.lands.Chronia.focus'),
       desc: t('universe.lands.Chronia.desc'),
-      duoImage: '/assets/duos/6_Elias Selene.jpg',
+      duoImage: assetPath('/assets/duos/6_Elias Selene.jpg'),
     },
     {
       land: 'Lexiconia',
@@ -81,7 +82,7 @@ const Universe = () => {
       duo: ['Ronan', 'Nerissa'],
       focus: t('universe.lands.Lexiconia.focus'),
       desc: t('universe.lands.Lexiconia.desc'),
-      duoImage: '/assets/duos/7_Ronan Nerissa.jpg',
+      duoImage: assetPath('/assets/duos/7_Ronan Nerissa.jpg'),
     },
     {
       land: 'Geometria',
@@ -90,7 +91,7 @@ const Universe = () => {
       duo: ['Silas', 'Vesta'],
       focus: t('universe.lands.Geometria.focus'),
       desc: t('universe.lands.Geometria.desc'),
-      duoImage: '/assets/duos/2_Silas Vesta.jpg',
+      duoImage: assetPath('/assets/duos/2_Silas Vesta.jpg'),
     },
     {
       land: 'Natura',
@@ -99,7 +100,7 @@ const Universe = () => {
       duo: ['Ezra', 'Athena'],
       focus: t('universe.lands.Natura.focus'),
       desc: t('universe.lands.Natura.desc'),
-      duoImage: '/assets/duos/4_Ezra Athena.jpg',
+      duoImage: assetPath('/assets/duos/4_Ezra Athena.jpg'),
     },
   ];
 
@@ -160,7 +161,7 @@ const Universe = () => {
             <div className="seriphia-block">
               <div className="seriphia-block__image">
                 <img
-                  src="/assets/characters/ETERNAL LEARNING MOTHER.png"
+                  src={assetPath('/assets/characters/ETERNAL LEARNING MOTHER.png')}
                   alt="Seriphia — An Eternal Learning Mother"
                 />
               </div>
@@ -195,7 +196,7 @@ const Universe = () => {
               <div className="map-glow-ring" />
               <div className="map-float-wrapper">
                 <img
-                  src="/assets/Quest map.gif"
+                  src={assetPath('/assets/Quest map.gif')}
                   alt="The Global Sound Map — Seven lands of learning"
                   className="map-image"
                 />

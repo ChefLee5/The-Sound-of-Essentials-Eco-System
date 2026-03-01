@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import ParallaxHero from '../components/ParallaxHero';
+import { assetPath } from '../utils/assetPath';
 
 /* ── Intersection Observer Hook ── */
 const useReveal = () => {
@@ -92,7 +93,7 @@ const Home = () => {
           <div className="hero__visual animate-fade-in animate-delay-3">
             <div className="hero__image-wrapper animate-float">
               <img
-                src="/assets/soe-cover.png"
+                src={assetPath('/assets/soe-cover.png')}
                 alt="Kenji and Aiko looking at the Global Sound Map — The Sound of Essentials: Rhythm Quest cover art"
                 className="hero__image"
               />
