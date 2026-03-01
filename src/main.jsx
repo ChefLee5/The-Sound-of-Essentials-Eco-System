@@ -7,7 +7,7 @@ import './i18n/config'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/The-Sound-of-Essentials-Eco-System">
       <App />
     </BrowserRouter>
   </StrictMode>,
